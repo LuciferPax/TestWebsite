@@ -1,0 +1,273 @@
+:root {
+    background-color: rgba(13,17,23,255);
+    height: 1000px;
+}
+
+body {
+    margin: 0;
+}
+
+.top-navbar {
+    float: top;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: row;
+    border-bottom: solid rgb(67, 67, 67) 0.5px;
+    place-content: end right;
+    z-index: 1000;
+   position: fixed;
+   background-color: rgba(13,17,23,255);
+   top: 0px;
+}
+
+div {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins,sans-serif;
+    padding-left: 64px;
+    padding-right: 64px;
+}
+
+.koilang-heading-text {
+    padding-top: 20px;
+    text-align: left;
+    font-size: 64px;
+    font-weight: 800;
+    width: 887px;
+    margin-bottom: 0;
+    line-height: 1em;
+}
+
+.koilang-heading-koilang-disc-text {
+    color: rgb(255, 255, 255);
+}
+
+.koilang-grdient {
+    background: linear-gradient(90deg,#4ca5ff 2.34%,#b673f8 100.78%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.start-here-koilang-button {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    font-family: Poppins,sans-serif;
+    background-color: #4ca5ff;
+    color: rgb(255, 255, 255);
+    padding-top: 12px;
+    paddding-bottom: 12px;
+    padding-bottom: 12px;
+    border-radius: 57px;
+    width: 185px;
+    height: 50px;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.koilang-info-and-more {
+    color: rgb(163, 179, 188);
+    font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+    font-weight: 400;
+    font-size: 20px;
+    width: 700px;
+    margin-bottom: 40px;
+    margin-top: 30px;
+}
+
+.courses-topnav {
+    text-decoration: underline solid transparent;
+    text-decoration-thickness: 0.5px;
+    text-underline-offset: 1.2rem;
+  transition: text-decoration 100ms ease-in;
+    color: rgb(67, 67, 67);
+    transition: color 100ms ease-in;
+    font-family: Poppins,sans-serif;
+    padding-right: 30px;
+}
+
+.courses-topnav:hover {
+    color: rgb(255, 255, 255);
+    text-decoration: underline solid rgb(255, 255, 255);
+}
+
+.Koilang-topnav {
+    border-bottom: underline solid transparent;
+    text-decoration-thickness: 0.5px;
+    text-underline-offset: 1.2rem;
+  transition: border-bottom 100s ease-in;
+    color: rgb(67, 67, 67);
+    transition: color 100ms ease-in;
+    font-family: Poppins,sans-serif;
+    padding-right: 30px;
+}
+
+.Koilang-topnav:hover {
+    color: rgb(255, 255, 255);
+    text-decoration: underline solid rgb(255, 255, 255);
+}
+
+.documentation-topnav {
+    text-decoration: underline solid transparent;
+    text-decoration-thickness: 0.5px;
+    text-underline-offset: 1.2rem;
+  transition: text-decoration 100s ease-in;
+    color: rgb(67, 67, 67);
+    transition: color 100ms ease-in;
+    font-family: Poppins,sans-serif;
+    padding-right: 30px;
+}
+
+.documentation-topnav:hover {
+    color: rgb(255, 255, 255);
+    text-decoration: underline solid rgb(255, 255, 255);
+}
+
+.wave-container {
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 30px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.koilang-logo {
+    position: absolute;
+    padding-left: 800px;
+    top: 77px;
+}
+
+.waves {
+    position:relative;
+    width: 100%;
+    height:15vh;
+    margin-bottom:-7px; /*Fix for safari gap*/
+    min-height:100px;
+    max-height:150px;
+  }
+  
+  .content {
+    position:relative;
+    height:20vh;
+    text-align:center;
+    background-color: white;
+  }
+  
+  /* Animation */
+  
+  .parallax > use {
+    animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+  }
+  .parallax > use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 7s;
+  }
+  .parallax > use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 10s;
+  }
+  .parallax > use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 13s;
+  }
+  .parallax > use:nth-child(4) {
+    animation-delay: -5s;
+    animation-duration: 20s;
+  }
+  @keyframes move-forever {
+    0% {
+     transform: translate3d(-90px,0,0);
+    }
+    100% { 
+      transform: translate3d(85px,0,0);
+    }
+  }
+  /*Shrinking for mobile*/
+  @media (max-width: 768px) {
+    .waves {
+      height:40px;
+      min-height:40px;
+    }
+    .content {
+      height:30vh;
+    }
+    h1 {
+      font-size:24px;
+    }
+  }
+
+.koilang-area-two {
+    background-color:rgb(255, 255, 255);
+    width: 100%;
+    padding-top: 25px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.koilang-quip {
+    color: rgb(67, 67, 67);
+    font-size: 64px;
+    font-weight: 800;
+    width: 887;
+}
+
+.cards-list {
+  z-index: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card {
+  margin: 30px auto;
+  width: 300px;
+  height: 300px;
+  border-radius: 40px;
+box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+  cursor: pointer;
+  transition: 0.4s;
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+
+.card .card_title {
+  text-align: center;
+  border-radius: 0px 0px 40px 40px;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: -80px;
+  height: 40px;
+}
+
+.card:hover {
+  transform: scale(0.9, 0.9);
+  box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
+    -5px -5px 30px 15px rgba(0,0,0,0.22);
+}
+
+.title-white {
+  color: white;
+}
+
+@media all and (max-width: 500px) {
+  .card-list {
+    /* On small screens, we are no longer using row direction but column */
+    flex-direction: column;
+  }
+}
+
+.koilang-gradient-disc-text {
+  font-family: Poppins,sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
