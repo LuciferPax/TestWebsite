@@ -3,6 +3,28 @@
 
 <head>
   <link rel="stylesheet" href="main.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+  $(document).ready(function () {
+        $('#card-1').hover(function () {
+            $('#card-2, #card-3').css('visibility', 'hidden');
+        }, function () {
+            $('#card-2, #card-3').css('visibility', 'visible');
+        });
+
+        $('#card-2').hover(function () {
+            $('#card-1, #card-3').css('visibility', 'hidden');
+        }, function () {
+            $('#card-1, #card-3').css('visibility', 'visible');
+        });
+
+        $('#card-3').hover(function () {
+            $('#card-1, #card-2').css('visibility', 'hidden');
+        }, function () {
+            $('#card-1, #card-2').css('visibility', 'visible');
+        });
+    });
+</script>
 </head>
 
 
@@ -53,33 +75,28 @@ viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
         </h1>
         <div class="cards-list">
   
-            <div class="card 1">
-              <div class="card_title title-white">
-                <p>App Development</p>
+            <div id="card-1" class="card 1">
+              <div class="card_title koilang-grdient">
+                <p>General</p>
               </div>
             </div>
             
-              <div class="card 2">
-              <div class="card_title title-white">
-                <p>Web Development</p>
-              </div>
-            </div>
-            
-            <div class="card 3">
-              <div class="card_title title-white">
-                <p>Game Development</p>
+            <div id="card-2" class="card 3">
+              <div class="card_title koilang-grdient">
+                <p>Game</p>
               </div>
             </div>
               
-              <div class="card 4">
-              <div class="card_title title-white">
+              <div id="card-3" class="card 4">
+              <div class="card_title koilang-grdient">
                 <p>Backend</p>
               </div>
               </div>
             
             </div>
     </div>
-    <script src="index.js"></script>
+    <script src="main.js"></script>
 </body>
 
 </html>
+
